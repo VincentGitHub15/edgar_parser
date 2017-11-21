@@ -1,6 +1,6 @@
 import sys, urllib.request
 import requests
-from lxml import etree
+# from lxml import etree
 import re
 
 cik = '000116659'
@@ -17,9 +17,9 @@ with urllib.request.urlopen(url) as response:
 cik_validation = requests.get(url)
 print(cik_validation, "wagwan")
 print(cik_validation.read())
-# print(type(cik_validation))
+print(type(cik_validation))
 parsed = etree.parse(url)
-# print(parsed)
+print(parsed)
 
 
 '''
