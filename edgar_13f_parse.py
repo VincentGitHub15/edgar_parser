@@ -18,7 +18,7 @@ cik_validation = requests.get(url)
 print(cik_validation, "wagwan")
 print(cik_validation.read())
 print(type(cik_validation))
-parsed = etree.parse(url)
+# parsed = etree.parse(url)
 print(parsed)
 
 
